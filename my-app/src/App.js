@@ -3,7 +3,7 @@ import './App.css';
 import MainContent from "./components/MainContent";
 import { ThemeProvider, createTheme, CssBaseline, Box } from "@mui/material";
 import TopBar from "./components/TopBar";
-import Sidebar from "./components/SideBar";
+import SideBar from "./components/SideBar";
 
 const theme = createTheme({
   palette: {
@@ -39,7 +39,7 @@ function App() {
           fontFamily:'Aleo, sans-serif'
         }}
       >
-        <Sidebar />
+        <SideBar />
         <Box sx={{ flex: 1, display: "flex", flexDirection: "column" }}>
           <MainContent/>
         </Box>
